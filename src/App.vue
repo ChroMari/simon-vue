@@ -22,6 +22,7 @@ body {
   background-size: cover;
   margin: 0;
   padding: 0;
+  max-width: 100%;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
