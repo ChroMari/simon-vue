@@ -1,0 +1,95 @@
+.game__title
+  color: #05C4B1
+  font-weight: bold
+  text-shadow: 1px 1px 2px #443738, 0 0 1em #E0F7FF, 0 0 0.2em #E0F7FF
+  text-align: center
+  margin: 20px 0
+  font-size: 24px
+  letter-spacing: 2px
+
+.game__currentLevel
+  background-color: #05C4B1
+  color: #E0F7FF
+  border: double #E0F7FF 3px
+  padding: 2%
+  border-radius: 6px
+  text-shadow: 1px 1px 2px #443738, 0 0 1em #E0F7FF, 0 0 0.2em #E0F7FF
+
+.game__board
+  background-color: #E0F7FF
+  border: double #05C4B1 5px
+  border-radius: 50%
+  height: 450px
+  margin: auto
+  padding: 10px
+  position: relative
+  width: 444px
+  display: flex
+  flex-wrap: wrap
+
+.game__center-circle
+  position: absolute
+  top: 50%
+  left: 50%
+  -webkit-transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%)
+  height: 150px
+  width: 150px
+  border-radius: 50%
+  border: double #05C4B1 5px
+  background-color: #E0F7FF
+  text-align: center
+  z-index: 5
+
+.center-circle
+  &__name
+    padding-top: 20%
+    font-size: 36px
+    color: #05C4B1
+    margin: 5px
+  &__btn
+    padding: 4px 25px
+    font-size: 12px
+    line-height: 1.5
+    border-radius: 3px
+    color: #fff
+    background-color: #5bc0de
+    border-color: #46b8da
+    cursor: pointer
+    &:hover
+      background-color: darken($color: #5bc0de, $amount: 5);
+
+.game-btn
+  border: 5px double #E0F7FF
+  height: 214px
+  width: 190px
+  position: relative
+  min-height: 1px
+  padding-right: 11px
+  padding-left: 11px
+  cursor: pointer
+  float: left
+  &__red
+    background-color: #E5476E
+    border-top-left-radius: 100%
+  &__blue
+    background-color: #33C4FA
+    border-top-right-radius: 100%
+  &__green
+    background-color: #05C4B1
+    border-bottom-left-radius: 100%
+  &__yellow
+    background-color: #FFA232
+    border-bottom-right-radius: 100%
+  
+.red
+  background-color: darken($color: #E5476E, $amount: 5);
+
+.blue
+  background-color: darken($color: #33C4FA, $amount: 5);
+
+.green
+  background-color: darken($color:  #05C4B1, $amount: 5);
+
+.yellow
+  background-color: darken($color: #FFA232, $amount: 5);
